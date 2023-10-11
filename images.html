@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images</title>
 </head>
+
 <body>
-    <img src="https://images.unsplash.com/photo-1606607291535-b0adfbf7424f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Failed to load" width="200">
+    <img src="https://images.unsplash.com/photo-1606607291535-b0adfbf7424f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+        alt="Failed to load" width="200">
 
     <picture>
-        <source srcset="./cocktail.jpeg" media="(orientation: portrait)"/>
+        <source srcset="./cocktail.jpeg" media="(orientation: portrait)" />
         <img src="./bananaBread.jpg" alt="">
     </picture>
 
+    <!-- Image map Generate -->
+    <img src="mudassir.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="clickMe()" target="" alt="" title="" href="" coords="388,274,208,23" shape="rect">
+    </map >
+
+    <script>
+        function clickMe() {
+            alert("Mudassir is going to be rich");
+        }
+    </script>
 </body>
 </html>
