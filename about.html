@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="" href="./logo.png" />
+    <title>About</title>
+    <style>
+      .carousel {
+        position: relative;
+      }
+      .main-video {
+        object-fit: fill;
+        width: 100%;
+        height: 600px;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+      audio,
+      canvas,
+      progress,
+      video {
+        display: inline-block;
+        vertical-align: baseline;
+      }
+      video {
+        object-fit: contain;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+      .carousel-caption {
+        position: absolute;
+        right: 15%;
+        top: 22%;
+        left: 15%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+      }
+      .slider-con h2 {
+        font-size: 50px;
+        text-transform: uppercase;
+        line-height: 50px;
+        font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma,
+          sans-serif;
+      }
+      h2 {
+        font-weight: 700;
+        line-height: 28px;
+        margin: 1.78rem 0 1.424rem 0;
+      }
+      h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .slider-con h2 span {
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 28px;
+        color: #e5ae32;
+      }
+
+      .slider-con p {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        line-height: 30px;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma,
+          sans-serif;
+      }
+      .slider-con a {
+        /* color: #fff; */
+        padding: 14px 45px;
+        line-height: 45px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        height: 45px;
+        text-align: center;
+        margin: 0px 10px;
+        font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma,
+          sans-serif;
+      }
+      .bann-btn-1 {
+        background: #e5ae32;
+        background: -webkit-linear-gradient(to top, #e2ae10, #e5ae32);
+        background: linear-gradient(to top, #e2ae10, #e5ae32);
+        color: #fff;
+        border: 1px solid #e5ae32;
+      }
+      a {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        outline: none;
+      }
+
+      a {
+        color: #039be5;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .bann-btn-2 {
+        border: 1px solid #e0e0e0;
+        color: #e0e0e0;
+      }
+      .bann-btn-2:hover {
+        background: #ffffff;
+        background: -webkit-linear-gradient(to top, #ffffff, #ffffff);
+        background: linear-gradient(to top, #ffffff, #ffffff);
+        color: #000000;
+        border: 1px solid #ffffff;
+      }
+      .bann-btn-1:hover {
+        background: #ffffff;
+        background: -webkit-linear-gradient(to top, #ffffff, #ffffff);
+        background: linear-gradient(to top, #ffffff, #ffffff);
+        color: #000000;
+        border: 1px solid #ffffff;
+      }
+      /* Add a black background color to the top navigation */
+      .topnav {
+        background-color: #333;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma,
+          sans-serif;
+      }
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      /* Add a color to the active/current link */
+      .topnav a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+        <a href="Webpage.html">Home</a>
+        <a href="#news">News</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="about.html">About</a>
+      </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item slider1 active">
+          <video
+            class="main-video"
+            playsinline="playsinline"
+            autoplay="autoplay"
+            muted="muted"
+            loop="loop"
+          >
+            <source
+              src="main.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="carousel-caption slider-con">
+            <h2>The <span>Islamia University</span> of Bahawalpur</h2>
+            <p>Top University in South Punjab</p>
+            <a href="/academic-programs" class="bann-btn-1">All Programs</a>
+            <a href="/about-university" class="bann-btn-2">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

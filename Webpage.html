@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="" href="./logo.png" />
+    <title>IUB - The Islamia University of Bahawalpur</title>
+    <style>
+      /* Add a black background color to the top navigation */
+      .topnav {
+        background-color: #333;
+        overflow: hidden;
+        border-radius: 5px;
+        
+      }
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma,
+          sans-serif;
+      }
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      /* Add a color to the active/current link */
+      .topnav a.active {
+        background-color: #04aa6d;
+        /* #29377C */
+        color: white;
+      }
+      
+
+      #heading {
+        text-align: center;
+        margin-top: 50px;
+        font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma,
+          sans-serif;
+      }
+      #hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px;
+      }
+      #heroimage:hover {
+        display: flex;
+        transform: scale(1.1);
+        transition: 0.5s;
+      }
+      #herotext {
+        display: flex;
+      }
+
+      #heading span {
+        color: #e5ae32;
+      }
+      #heading {
+        font-size: 50px;
+        text-transform: uppercase;
+      }
+      #con-title {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      #con-title h2 {
+        font-size: 36px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        line-height: 40px;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma,
+          sans-serif;
+      }
+      #con-title h2 span {
+        color: #e5ae32;
+      }
+      #discover img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+       
+      }
+      #discover{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px;
+        
+        
+      }
+      #discover img {
+        width: 30%;
+        height: 30%;
+        border-radius: 15px;
+      }
+        #footer {  
+              
+            padding: 10px 10px 0px 10px;  
+            bottom: 0;  
+            width: 100%;  
+            /* Height of the footer*/  
+            height: 40px;  
+            background: #b9b7b7;  
+            text-align: center;
+            border-radius: 5px;}
+
+        #herotext ul li {
+          list-style-type: square;
+          font-size: 30px;
+          margin-bottom: 20px;
+          font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma,
+          sans-serif;
+        }
+
+            
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <h1 id="heading">The <span>Islamia University</span> of Bahawalpur</h1>
+
+    <div id="hero">
+      <div id="herotext">
+        <ul>
+            <li>Inspiring Faculty</li>
+            <li>Cutting-edge Research</li>
+            <li>Global Opportunities</li>
+            <li>Inclusive Community</li>
+        </ul>
+      </div>
+      <div id="heroimage">
+        <img
+          style="clip-path: polygon(10% 0px, 100% 0%, 100% 100%, 0px 100%)"
+          src="./bwp.jpg"
+          alt="Failed to load"
+        />
+      </div>
+    </div>
+    <div id="con-title">
+      <h2>Discover <span>More</span></h2>
+    </div>
+    <div id="discover">
+      <img
+        src="./campuses.jpg"
+        alt=""
+      />
+      <img
+      src="./campuses.jpg"
+        alt=""
+      />
+      <img
+      src="./campuses.jpg"
+        alt=""
+      />
+    </div>
+    <footer id="footer">  
+        The Text which we want to insert in footer.  usually @Copyright Author ect ...   
+   </footer>  
+  </body>
+</html>
